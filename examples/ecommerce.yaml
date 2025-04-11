@@ -1,0 +1,27 @@
+endpoints:
+  - url: "https://api.example.com/cart"
+    method: "POST"
+    headers:
+      Content-Type: "application/json"
+      X-Api-Key: "{{ env API_KEY }}"
+    body:
+      user_id: "{{ readCSV 'users.csv' }}"
+      item_id: "{{ randomUUID }}"
+      quantity: "{{ randomInt 1 5 }}"
+
+  - url: "https://api.example.com/orders"
+    method: "GET"
+    headers:
+      Authorization: "Bearer {{ env AUTH_TOKEN }}"
+    query_params:
+      status: "active"
+      date_from: "{{ timestamp }}"
+
+load_pattern:
+  type: "ramp-up"
+  start_rps: 50
+  increment: 20
+  interval: 60s
+
+duration: 15m
+max_rps: 1000

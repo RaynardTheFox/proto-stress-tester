@@ -1,0 +1,30 @@
+endpoints:
+  - url: "https://jsonplaceholder.typicode.com/posts"
+    method: "GET"
+    headers:
+      Content-Type: "application/json"
+    query_params:
+      _limit: "10"
+
+  - url: "https://jsonplaceholder.typicode.com/posts"
+    method: "POST"
+    headers:
+      Content-Type: "application/json"
+    body:
+      title: "Test Post {{ randomInt 1 1000 }}"
+      body: "This is a test post body {{ randomUUID }}"
+      userId: "{{ randomInt 1 10 }}"
+
+  - url: "https://jsonplaceholder.typicode.com/posts/{{ randomInt 1 100 }}"
+    method: "GET"
+    headers:
+      Content-Type: "application/json"
+
+load_pattern:
+  type: "ramp-up"
+  start_rps: 10
+  increment: 5
+  interval: 30s
+
+duration: 2m
+max_rps: 50
