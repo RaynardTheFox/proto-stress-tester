@@ -1,6 +1,4 @@
-# Protobuf Stress Testing Tool
-
-A powerful and flexible stress testing tool built in Go, designed for testing services that use Protocol Buffers for data serialization.
+# Protobuf Stress Test Tool
 
 ## Features
 
