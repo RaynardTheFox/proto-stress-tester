@@ -2,14 +2,13 @@
 
 ## Features
 
-- 🚀 High-performance concurrent request handling
-- 📊 Detailed metrics and statistics
-- 🔄 Dynamic load pattern control
-- 🎯 Support for multiple endpoints
-- 📝 Template-based request generation
-- ⚡ FastHTTP for efficient HTTP requests
-- 🔧 Configurable via YAML/JSON/TOML
-- 📈 Real-time metrics reporting
+- Detailed metrics and statistics
+- Dynamic load pattern control
+- Support for multiple endpoints
+- Template-based request generation
+- FastHTTP
+- Configurable via YAML/JSON/TOML
+- Real-time metrics
 
 ## Installation
 
