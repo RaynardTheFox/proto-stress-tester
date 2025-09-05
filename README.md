@@ -103,12 +103,8 @@ The tool provides detailed metrics including:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
-- [FastHTTP](https://github.com/valyala/fasthttp) for high-performance HTTP client
-- [Viper](https://github.com/spf13/viper) for configuration management
-- [Protocol Buffers](https://developers.google.com/protocol-buffers) for data serialization
+- [FastHTTP](https://github.com/valyala/fasthttp)
+- [Viper](https://github.com/spf13/viper)
+- [Protocol Buffers](https://developers.google.com/protocol-buffers)
